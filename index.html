@@ -157,10 +157,10 @@
                       <heading>Research</heading>
                     </p>
                     <p>
-                      I am broadly interested in the areas of <strong>Robotics vision</strong>, <strong>Machine
-                        Learning</strong>, <strong>Reinforcement Learning</strong>, <strong>Artificial
-                        Intelligence</strong>, <strong>Computer Vision</strong>, <strong>SLAM</strong> and
-                      <strong>Probabilistic Graphical Models</strong>. Most of my work
+                      I am broadly interested in the areas of <strong>Robotics vision</strong>, <strong>Self-Supervised
+                      Representation Learning</strong>, <strong>Computer vision</strong>, <strong>SLAM</strong>,
+                      <strong>Graphical Models</strong>, <strong>Uncertainty Estimation</strong>, <strong>Reinforcement
+                      Learning</strong>, <strong>Graphical models</strong>. Most of my work
                       is motivated by the following question: "How can robotic agents be endowed with environmental
                       awareness to start perceiving their surroundings accurately and reliably and thus, enhance their
                       decision-making capabilities?"
@@ -297,7 +297,7 @@
                       <a href="https://github.com/MikeS96/autonomous_landing_uav">code</a> /
                       <a href="data/RedColsiPasto.pdf">poster</a> /
                       <a href="https://red.uao.edu.co/bitstream/10614/10754/5/T08388.pdf">thesis</a> /
-                      <a href="https://arxiv.org/abs/2108.06616">arxiv</a> /
+                      <a href="https://arxiv.org/abs/2108.06616">arXiv</a> /
                       <a href="https://www.youtube.com/watch?v=2NWR9Otdz-s&feature=youtu.be">video</a> /
                       <a href="javascript:togglebib('dals')" class="togglebib">bibtex</a>
 
@@ -556,6 +556,53 @@ landing pad position (Implemented in C++/Linux).
                   <td></td>
                 </tr>
 
+                <!-- DINO Real Project -->
+                <tr onmouseout="dino_real_stop()" onmouseover="dino_real_start()">
+                  <td
+                    style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='dino_real_seg'>
+                        <img src='images/dino_real_after.gif' width="160">
+                      </div>
+                      <img src='images/dino_real_before.jpg' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function dino_real_start() {
+                        document.getElementById('dino_real_seg').style.opacity = "1";
+                      }
+
+                      function dino_real_stop() {
+                        document.getElementById('dino_real_seg').style.opacity = "0";
+                      }
+                      dino_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://sachamorin.github.io/dino/">
+                      <papertitle>Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers
+                      </papertitle>
+                    </a>
+                    <br>
+                    <strong>Miguel Saavedra-Ruiz</strong>
+                    <a href="https://sachamorin.github.io/dino/">Sacha Morin</a>,
+                    <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    <a href="https://github.com/sachaMorin/dino">code (model)</a> /
+                    <a href="https://github.com/MikeS96/object-detection/tree/daffy">code (servoing)</a> /
+                    <a href="https://arxiv.org/abs/2203.03682">arXiv</a> /
+                    <a href="https://sachamorin.github.io/dino/">webpage</a>
+                    <p></p>
+                    <p>Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</p>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
+
+                <!-- DINO Simulated Project -->
                 <tr onmouseout="dino_stop()" onmouseover="dino_start()">
                   <td
                     style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -598,6 +645,7 @@ landing pad position (Implemented in C++/Linux).
                   </td>
                 </tr>
 
+                <!-- Transfer Learning -->
                 <tr onmouseout="style_stop()" onmouseover="style_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -654,6 +702,7 @@ seamlessly implementation of style-transfer with an intuitive GUI.
                   </td>
                 </tr>
 
+                <!-- Robotics Software -->
                 <tr onmouseout="rsnd_stop()" onmouseover="rsnd_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -709,6 +758,7 @@ path planning. The projects are listed below
                   </td>
                 </tr>
 
+                <!-- VO and VIO -->
                 <tr onmouseout="vio_stop()" onmouseover="vio_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -762,6 +812,7 @@ of the UAV (Implemented in Python/Linux).
                   </td>
                 </tr>
 
+                <!-- SITL -->
                 <tr onmouseout="sitl_stop()" onmouseover="sitl_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -813,6 +864,7 @@ Linux).
                   </td>
                 </tr>
 
+                <!-- RL Projects -->
                 <tr onmouseout="rlSpe_stop()" onmouseover="rlSpe_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -870,6 +922,7 @@ projects, some of those are listed below.
                   </td>
                 </tr>
 
+                <!-- Teleop -->
                 <tr onmouseout="teleop_stop()" onmouseover="teleop_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -922,6 +975,7 @@ of the vehicle with a host computer through WIFI (Implemented in C/Linux).
                   </td>
                 </tr>
 
+                <!-- Turtlebot -->
                 <tr onmouseout="mturtle_stop()" onmouseover="mturtle_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -972,6 +1026,7 @@ in C++/Linux).
                   </td>
                 </tr>
 
+                <!-- Self-Driving Cars Specialization -->
                 <tr onmouseout="carsSpe_stop()" onmouseover="carsSpe_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -1038,6 +1093,7 @@ representations  and state machines for a simple navigation strategy.
                   </td>
                 </tr>
 
+                <!-- License Plate Project -->
                 <tr onmouseout="lplate_stop()" onmouseover="lplate_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -1091,6 +1147,7 @@ TensorRT/Linux).
                   </td>
                 </tr>
 
+                <!-- Flow-Control with heatmaps -->
                 <tr onmouseout="flowc_stop()" onmouseover="flowc_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -1142,6 +1199,7 @@ Linux)
                   </td>
                 </tr>
 
+                <!-- Calendula Flower Experiments -->
                 <tr onmouseout="calenF_stop()" onmouseover="calenF_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -1226,7 +1284,7 @@ flowers through a transportation band (Implemented in C, Python/Linux).
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> December 30th 2021
+                    <strong>Updated</strong> March 20th 2022
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
