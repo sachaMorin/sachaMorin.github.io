@@ -592,7 +592,21 @@ landing pad position (Implemented in C++/Linux).
                     <a href="https://arxiv.org/abs/2203.03682">arXiv</a> /
                     <a href="https://sachamorin.github.io/dino/">webpage</a>
                     <p></p>
-                    <p>Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</p>
+                    <div class="paper" id="dino_real_description">
+                      <h6><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></h6>
+                      <pre xml:space="preserve">
+In this work, we consider the problem of learning a perception model for monocular robot
+navigation using few annotated images. Using a Vision Transformer (ViT) pretrained with a
+label-free self-supervised method, we successfully train a coarse image segmentation model
+for the Duckietown environment using 70 training images. Our model performs coarse image
+segmentation at the 8x8 patch level, and the inference resolution can be adjusted to balance
+prediction granularity and real-time perception constraints. We study how best to adapt a
+ViT to our task and environment, and find that some lightweight architectures can yield good
+single-image segmentations at a usable frame rate, even on CPU. The resulting perception model
+is used as the backbone for a simple yet robust visual servoing agent, which we deploy on a
+differential drive mobile robot to perform two tasks: lane following and obstacle avoidance.
+                </pre>
+                    </div>
                   </td>
                 </tr>
                 <!-- Break of line-->
@@ -605,7 +619,7 @@ landing pad position (Implemented in C++/Linux).
                 <!-- DINO Simulated Project -->
                 <tr onmouseout="dino_stop()" onmouseover="dino_start()">
                   <td
-                    style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='dino_seg'>
                         <img src='images/dino_after.gif' width="160">
@@ -625,8 +639,7 @@ landing pad position (Implemented in C++/Linux).
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="https://github.com/sachaMorin/dino">
-                      <papertitle>Self-Supervised Learning : Applications to object detection and image segmentation
-                      </papertitle>
+                      <papertitle>Self-Supervised Learning : Applications to object detection and image segmentation</papertitle>
                     </a>
                     <br>
                     <a href="https://github.com/sachaMorin">Sacha Morin</a>,
@@ -635,7 +648,15 @@ landing pad position (Implemented in C++/Linux).
                     <br>
                     <a href="https://github.com/sachaMorin/dino">code</a>
                     <p></p>
-                    <p>DINO features for object detection and sparse instance segmentation in duckie-town dataset.</p>
+                    <div class="paper" id="dino_description">
+                      <h6><a href="javascript:togglebib('dino_description')" class="togglebib">DINO features for object detection and sparse instance segmentation in duckie-town dataset.</a></h6>
+                      <pre xml:space="preserve">
+In this work, we assess the usefulness of embeddings from two Self-Supervised representation
+learning methods, DINO and MoBY, in two downstream computer vision applications: image
+segmentation and object detection. We use Duckietown image data for all of our experiments.
+Results demonstrate that indeed DINO Embeddings provide an excelling starting point for downstream applications.
+                </pre>
+                    </div>
                   </td>
                 </tr>
                 <!-- Break of line-->
@@ -1284,7 +1305,7 @@ flowers through a transportation band (Implemented in C, Python/Linux).
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> March 20th 2022
+                    <strong>Updated</strong> March 22th 2022
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
