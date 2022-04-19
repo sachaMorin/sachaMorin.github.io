@@ -29,6 +29,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords"
     content="Miguel, Saavedra, Saavedra-Ruiz, Robotics, Robot, Deep, Learning, Reinforcement, Computer, Vision, Self-Driving, Vehicles, Mobile, Sensor, Fusion">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <meta property="og:type" content="website"/>
 </head>
 
 <body>
@@ -44,7 +46,6 @@
             <table
               style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tr style="padding:0">
-                <!--<td style="padding:2.5%;width:20%;vertical-align:middle;min-width:100px">-->
                 <td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
                   <a href="index.html" target="_self" style="font-size:22px">About me</a>
                 </td>
@@ -108,11 +109,6 @@
                         <strong>C</strong>ano <strong>I</strong>ngenieria</a>
                       (Robotics vision, Multi-modal sensor fusion, AI, and UAVs.)
                     </p>
-                    <!-- MSc opportunity!!!
-                    <p>
-                      <span class="highlight"><strong>I am looking for an exciting MSc or MASc opportunity in Computer vision, Robotics, AI or RL where I can contribute into these fascinating fields.</strong></span>
-                    </p>
-                    -->
                     <p style="text-align:center">
                       <a href="mailto:mguel.angel.saavedra.ruiz@umontreal.ca"><i style="font-size:16px"
                           class="fa fa-envelope"></i> &nbsp miguel [dot] angel [dot] saavedra [dot] ruiz [at] umontreal
@@ -185,6 +181,23 @@
                     </p>
                     <ul>
                       <li>
+                        <span style="color:#ff0000"><strong>[April 2022]</strong></span> I have been accepted at
+                        <a href="https://robotics-summerschool.ethz.ch/">ETH Robotics Summer School</a> 2022 as a
+                        participant.
+                      </li>
+                      <li>
+                        <span style="color:#ff0000"><strong>[March 2022]</strong></span> I was awarded by Le département
+                        d'informatique et de recherche opérationnelle (DIRO) and Le ministère de l’Enseignement
+                        supérieur du Québec with a scholarship.
+                      </li>
+                      <li>
+                        <span style="color:#ff0000"><strong>[March 2022]</strong></span> The paper
+                          <a href="https://arxiv.org/abs/2203.03682">"Monocular Robot Navigation with
+                          Self-Supervised Pretrained Vision Transformers"</a> has been accepted for Poster presentation
+                          at the 19th <a href="https://www.computerrobotvision.org/#"> Conference on Robotics and Vision
+                          (CRV).</a>
+                      </li>
+                      <li>
                         <span style="color:#ff0000"><strong>[September 2021]</strong></span> I Started a research Master
                         in Computer Science at <a href="https://mila.quebec/en/">MILA</a> and <a
                           href="https://www.umontreal.ca/">Université de Montréal</a> under the supervision of <a
@@ -192,11 +205,10 @@
                         Robotics.
                       </li>
                       <li>
-                        <span style="color:#ff0000"><strong>[July 2021]</strong></span> The paper <a
-                          href="https://arxiv.org/abs/2108.06616">"Monocular visual autonomous landing system for
-                          quadcopter drones using software in the loop"</a> was accepted in the journal <a
-                          href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=62">Aerospace & Electronics
-                          Systems Magazine</a> IEEE.
+                        <strong>[July 2021]</strong>The paper <a href="https://arxiv.org/abs/2108.06616">"Monocular
+                          visual autonomous landing system for quadcopter drones using software in the loop"</a> was
+                          accepted in the journal <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=62">
+                          Aerospace & Electronics Systems Magazine</a> IEEE.
                       </li>
                       <li>
                         <strong>[July 2021]</strong> Successfully completed a Postgraduate Diploma in Artificial
@@ -258,6 +270,79 @@
                   <td></td>
                 </tr>
 
+
+                <!-- DINO Real Project -->
+                <tr onmouseout="dino_real_stop()" onmouseover="dino_real_start()">
+                  <td
+                      style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='dino_real_seg'>
+                        <img src='images/dino_real_after.gif' width="160">
+                      </div>
+                      <img src='images/dino_real_before.jpg' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function dino_real_start() {
+                        document.getElementById('dino_real_seg').style.opacity = "1";
+                      }
+
+                      function dino_real_stop() {
+                        document.getElementById('dino_real_seg').style.opacity = "0";
+                      }
+                      dino_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://sachamorin.github.io/dino/">
+                      <papertitle>Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers
+                      </papertitle>
+                    </a>
+                    <br>
+                    <strong>Miguel Saavedra-Ruiz</strong>
+                    <a href="https://sachamorin.github.io/dino/">Sacha Morin</a>,
+                    <a href="https://liampaull.ca/">Liam Paull</a>
+                    <br>
+                    <em>Conference on Robotics and Vision (CRV) - (to appear)</em>, 2022 &nbsp <span
+                          style="color:#ff0000"><strong>(Poster Presentation)</strong></span>
+                    <br>
+                    <div class="paper" id="dino_real">
+                      <a href="https://github.com/sachaMorin/dino">code (model)</a> /
+                      <a href="https://github.com/MikeS96/object-detection/tree/daffy">code (servoing)</a> /
+                      <a href="https://arxiv.org/abs/2203.03682">arXiv</a> /
+                      <a href="https://sachamorin.github.io/dino/">webpage</a> /
+                      <a href="javascript:togglebib('dino_real')" class="togglebib">bibtex</a>
+                      <pre xml:space="preserve">
+@article{saavedra2022monocular,
+	title        = {Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers},
+	author       = {Saavedra-Ruiz, Miguel and Morin, Sacha and Paull, Liam},
+	year         = 2022,
+	journal      = {arXiv preprint arXiv:2203.03682}
+}                     </pre>
+                    </div>
+                    <p></p>
+                    <div class="paper" id="dino_real_description">
+                      <h6><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></h6>
+                      <pre xml:space="preserve">
+In this work, we consider the problem of learning a perception model for monocular robot
+navigation using few annotated images. Using a Vision Transformer (ViT) pretrained with a
+label-free self-supervised method, we successfully train a coarse image segmentation model
+for the Duckietown environment using 70 training images. Our model performs coarse image
+segmentation at the 8x8 patch level, and the inference resolution can be adjusted to balance
+prediction granularity and real-time perception constraints. We study how best to adapt a
+ViT to our task and environment, and find that some lightweight architectures can yield good
+single-image segmentations at a usable frame rate, even on CPU. The resulting perception model
+is used as the backbone for a simple yet robust visual servoing agent, which we deploy on a
+differential drive mobile robot to perform two tasks: lane following and obstacle avoidance. </pre>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
+
                 <tr onmouseout="dals_stop()" onmouseover="dals_start()">
                   <td
                     style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -300,24 +385,23 @@
                       <a href="https://arxiv.org/abs/2108.06616">arXiv</a> /
                       <a href="https://www.youtube.com/watch?v=2NWR9Otdz-s&feature=youtu.be">video</a> /
                       <a href="javascript:togglebib('dals')" class="togglebib">bibtex</a>
-
-                      <pre xml:space="preserve">
-@ARTICLE{9656574,
-  author={Saavedra-Ruiz, Miguel and Pinto-Vargas, Ana Maria and Romero-Cano, Victor},
-  journal={IEEE Aerospace and Electronic Systems Magazine},
-  title={Monocular Visual Autonomous Landing System for Quadcopter Drones using Software in the Loop},
-  year={2021},
-  volume={},
-  number={},
-  pages={1-1},
-  doi={10.1109/MAES.2021.3115208}}
-                </pre>
+                    <pre xml:space="preserve">
+@article{9656574,
+	title        = {Monocular Visual Autonomous Landing System for Quadcopter Drones using Software in the Loop},
+	author       = {Saavedra-Ruiz, Miguel and Pinto-Vargas, Ana Maria and Romero-Cano, Victor},
+	year         = 2021,
+	journal      = {IEEE Aerospace and Electronic Systems Magazine},
+	volume       = {},
+	number       = {},
+	pages        = {1--1},
+	doi          = {10.1109/MAES.2021.3115208}
+}                   </pre>
                     </div>
                     <p></p>
                     <div class="paper" id="dals_description">
                       <h6><a href="javascript:togglebib('dals_description')" class="togglebib">Autonomous landing system
                           for a UAV on a terrestrial vehicle using robotics vision and control.</a></h6>
-                      <pre xml:space="preserve">
+                      <pre xml:space="default">
 My BEng degree project addressed the problem of the autonomous landing of a UAV
 with a landing platform located on the top of a ground vehicle. The project
 utilized vision-based techniques to detect the landing platform, a Kalman
@@ -343,8 +427,7 @@ Gazebo-based simulation, our approach provides a tool for safe parameter tuning 
 design testing prior to physical implementation. Finally, the proposed monocular
 vision-only approach to landing pad tracking made it possible to effectively implement
 the system in an F450 quadcopter drone with the standard computational capabilities of
-an Odroid XU4 embedded processor.
-                </pre>
+an Odroid XU4 embedded processor. </pre>
                     </div>
                   </td>
                 </tr>
@@ -414,8 +497,7 @@ is considered solved with ConvolutionalNeural Networks (CNN).
 This task is addressed employing different ML techniques such as RANSAC for road segmentation and
 DBSCAN for clustering. Global features are extracted out of the segmented point cloud using
 The Ensemble of Shape Functions (ESF). Some feature are engineered through PCA and statistics.
-Finally, the amodal 3D bounding box parameters are estimated through a SVR regressor.
-                </pre>
+Finally, the amodal 3D bounding box parameters are estimated through a SVR regressor. </pre>
                       </div>
                     </div>
                   </td>
@@ -464,16 +546,15 @@ Finally, the amodal 3D bounding box parameters are estimated through a SVR regre
                       <a href="https://www.youtube.com/watch?v=knH2Hju--3I&feature=emb_title">video</a> /
                       <a href="javascript:togglebib('dtl')" class="togglebib">bibtex</a>
                       <pre xml:space="preserve">
-@INPROCEEDINGS{8588112,
-  author={M. S. {Ruiz} and A. M. P. {Vargas} and V. R. {Cano}},
-  booktitle={2018 IEEE 2nd Colombian Conference on Robotics and Automation (CCRA)},
-  title={Detection and tracking of a landing platform for aerial robotics applications},
-  year={2018},
-  volume={},
-  number={},
-  pages={1-6},
-}
-              </pre>
+@inproceedings{8588112,
+	title        = {Detection and tracking of a landing platform for aerial robotics applications},
+	author       = {M. S. {Ruiz} and A. M. P. {Vargas} and V. R. {Cano}},
+	year         = 2018,
+	booktitle    = {2018 IEEE 2nd Colombian Conference on Robotics and Automation (CCRA)},
+	volume       = {},
+	number       = {},
+	pages        = {1--6}
+}                     </pre>
                       <p></p>
                       <div class="paper" id="dtl_description">
                         <h6><a href="javascript:togglebib('dtl_description')" class="togglebib">Object Detection and
@@ -485,8 +566,7 @@ detection and tracking system with ROS and OpenCV. The system extended the capab
 SURF-based feature detector-descriptor that makes detections of a landing pad alongside a Kalman
 filter-based estimation module. The system demonstrated a considerable improvement over
 only-detector methods, diminishing the detection error and providing accurate estimations of the
-landing pad position (Implemented in C++/Linux).
-              </pre>
+landing pad position (Implemented in C++/Linux). </pre>
                       </div>
                     </div>
                   </td>
@@ -556,115 +636,56 @@ landing pad position (Implemented in C++/Linux).
                   <td></td>
                 </tr>
 
-                <!-- DINO Real Project -->
-                <tr onmouseout="dino_real_stop()" onmouseover="dino_real_start()">
-                  <td
-                    style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <div class="two" id='dino_real_seg'>
-                        <img src='images/dino_real_after.gif' width="160">
-                      </div>
-                      <img src='images/dino_real_before.jpg' width="160">
-                    </div>
-                    <script type="text/javascript">
-                      function dino_real_start() {
-                        document.getElementById('dino_real_seg').style.opacity = "1";
-                      }
-
-                      function dino_real_stop() {
-                        document.getElementById('dino_real_seg').style.opacity = "0";
-                      }
-                      dino_real_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://sachamorin.github.io/dino/">
-                      <papertitle>Monocular Robot Navigation with Self-Supervised Pretrained Vision Transformers
-                      </papertitle>
-                    </a>
-                    <br>
-                    <strong>Miguel Saavedra-Ruiz</strong>
-                    <a href="https://sachamorin.github.io/dino/">Sacha Morin</a>,
-                    <a href="https://liampaull.ca/">Liam Paull</a>
-                    <br>
-                    <a href="https://github.com/sachaMorin/dino">code (model)</a> /
-                    <a href="https://github.com/MikeS96/object-detection/tree/daffy">code (servoing)</a> /
-                    <a href="https://arxiv.org/abs/2203.03682">arXiv</a> /
-                    <a href="https://sachamorin.github.io/dino/">webpage</a>
-                    <p></p>
-                    <div class="paper" id="dino_real_description">
-                      <h6><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></h6>
-                      <pre xml:space="preserve">
-In this work, we consider the problem of learning a perception model for monocular robot
-navigation using few annotated images. Using a Vision Transformer (ViT) pretrained with a
-label-free self-supervised method, we successfully train a coarse image segmentation model
-for the Duckietown environment using 70 training images. Our model performs coarse image
-segmentation at the 8x8 patch level, and the inference resolution can be adjusted to balance
-prediction granularity and real-time perception constraints. We study how best to adapt a
-ViT to our task and environment, and find that some lightweight architectures can yield good
-single-image segmentations at a usable frame rate, even on CPU. The resulting perception model
-is used as the backbone for a simple yet robust visual servoing agent, which we deploy on a
-differential drive mobile robot to perform two tasks: lane following and obstacle avoidance.
-                </pre>
-                    </div>
-                  </td>
-                </tr>
-                <!-- Break of line-->
-                <tr>
-                  <td colspan="2" style="padding:0; margin:0;">
-                    <hr style="padding:0; margin:0;">
-                  </td>
-                </tr>
 
                 <!-- DINO Simulated Project -->
-                <tr onmouseout="dino_stop()" onmouseover="dino_start()">
-                  <td
-                    style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <div class="two" id='dino_seg'>
-                        <img src='images/dino_after.gif' width="160">
-                      </div>
-                      <img src='images/dino_before.png' width="160">
-                    </div>
-                    <script type="text/javascript">
-                      function dino_start() {
-                        document.getElementById('dino_seg').style.opacity = "1";
-                      }
+<!--                <tr onmouseout="dino_stop()" onmouseover="dino_start()">-->
+<!--                  <td-->
+<!--                    style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">-->
+<!--                    <div class="one">-->
+<!--                      <div class="two" id='dino_seg'>-->
+<!--                        <img src='images/dino_after.gif' width="160">-->
+<!--                      </div>-->
+<!--                      <img src='images/dino_before.png' width="160">-->
+<!--                    </div>-->
+<!--                    <script type="text/javascript">-->
+<!--                      function dino_start() {-->
+<!--                        document.getElementById('dino_seg').style.opacity = "1";-->
+<!--                      }-->
 
-                      function dino_stop() {
-                        document.getElementById('dino_seg').style.opacity = "0";
-                      }
-                      dino_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://github.com/sachaMorin/dino">
-                      <papertitle>Self-Supervised Learning : Applications to object detection and image segmentation</papertitle>
-                    </a>
-                    <br>
-                    <a href="https://github.com/sachaMorin">Sacha Morin</a>,
-                    <strong>Miguel Saavedra-Ruiz</strong>,
-                    Wei Fen
-                    <br>
-                    <a href="https://github.com/sachaMorin/dino">code</a>
-                    <p></p>
-                    <div class="paper" id="dino_description">
-                      <h6><a href="javascript:togglebib('dino_description')" class="togglebib">DINO features for object detection and sparse instance segmentation in duckie-town dataset.</a></h6>
-                      <pre xml:space="preserve">
-In this work, we assess the usefulness of embeddings from two Self-Supervised representation
-learning methods, DINO and MoBY, in two downstream computer vision applications: image
-segmentation and object detection. We use Duckietown image data for all of our experiments.
-Results demonstrate that indeed DINO Embeddings provide an excelling starting point for downstream applications.
-                </pre>
-                    </div>
-                  </td>
-                </tr>
-                <!-- Break of line-->
-                <tr>
-                  <td colspan="2" style="padding:0; margin:0;">
-                    <hr style="padding:0; margin:0;">
-                  </td>
-                </tr>
+<!--                      function dino_stop() {-->
+<!--                        document.getElementById('dino_seg').style.opacity = "0";-->
+<!--                      }-->
+<!--                      dino_stop()-->
+<!--                    </script>-->
+<!--                  </td>-->
+<!--                  <td style="padding:20px;width:75%;vertical-align:middle">-->
+<!--                    <a href="https://github.com/sachaMorin/dino">-->
+<!--                      <papertitle>Self-Supervised Learning : Applications to object detection and image segmentation</papertitle>-->
+<!--                    </a>-->
+<!--                    <br>-->
+<!--                    <a href="https://github.com/sachaMorin">Sacha Morin</a>,-->
+<!--                    <strong>Miguel Saavedra-Ruiz</strong>,-->
+<!--                    Wei Fen-->
+<!--                    <br>-->
+<!--                    <a href="https://github.com/sachaMorin/dino">code</a>-->
+<!--                    <p></p>-->
+<!--                    <div class="paper" id="dino_description">-->
+<!--                      <h6><a href="javascript:togglebib('dino_description')" class="togglebib">DINO features for object detection and sparse instance segmentation in duckie-town dataset.</a></h6>-->
+<!--                      <pre xml:space="preserve">-->
+<!--In this work, we assess the usefulness of embeddings from two Self-Supervised representation-->
+<!--learning methods, DINO and MoBY, in two downstream computer vision applications: image-->
+<!--segmentation and object detection. We use Duckietown image data for all of our experiments.-->
+<!--Results demonstrate that indeed DINO Embeddings provide an excelling starting point for downstream applications.-->
+<!--                </pre>-->
+<!--                    </div>-->
+<!--                  </td>-->
+<!--                </tr>-->
+<!--                &lt;!&ndash; Break of line&ndash;&gt;-->
+<!--                <tr>-->
+<!--                  <td colspan="2" style="padding:0; margin:0;">-->
+<!--                    <hr style="padding:0; margin:0;">-->
+<!--                  </td>-->
+<!--                </tr>-->
 
                 <!-- Transfer Learning -->
                 <tr onmouseout="style_stop()" onmouseover="style_start()">
@@ -711,8 +732,7 @@ present how the implementation is capable to transfer the desired content and st
 image and even create an aesthetic result from scratch.
 
 This work was locally deployed using docker-compose and web sockets in order the create a
-seamlessly implementation of style-transfer with an intuitive GUI.
-                </pre>
+seamlessly implementation of style-transfer with an intuitive GUI. </pre>
                     </div>
                   </td>
                 </tr>
@@ -767,8 +787,7 @@ path planning. The projects are listed below
   * Creating a ball chaser robot in ROS and Gazebo.
   * Localization through Kalman Filter, Monte Carlo methods and ACML.
   * Occupancy grid map generation, GridBased Fast Slam ROS package and RTAB-Map SLAM.
-  * The A* algorithm and robot navigation.
-                </pre>
+  * The A* algorithm and robot navigation. </pre>
                     </div>
                   </td>
                 </tr>
@@ -821,8 +840,7 @@ are obtained, 3d-points coordinates were retrieved with the depth map of the ima
 calibration  matrix. Finally, the trajectory is estimated using 3D-2D Perspective-n-Point (PNP). As an additional
 step, the VO trajectory was used with the IMU data in an Error-State Extended Kalman Filter to estimate the pose
 even when most of the VO observations were dropped. Both VO and VIO showed good results estimating the trajectory
-of the UAV (Implemented in Python/Linux).
-                </pre>
+of the UAV (Implemented in Python/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -873,8 +891,7 @@ Simulated an autonomous landing system for a UAV with Gazebo, ROS and the Softwa
 provided by PX4. The project consisted in the development of different packages in C++ and Python
 which allowed the assessment of an autonomous landing system. This robotics simulation allowed the
 thoroughly development and evaluation of a landing pipeline for a UAV (Implemented in Python, C++/
-Linux).
-                </pre>
+Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -931,8 +948,7 @@ projects, some of those are listed below.
   performance of planning methods in RL.
   * Implemented an Average Reward Softmax Actor-Critic algorithm using Tile-coding to solve the
   Pendulum Swing-Up continuous problem.
-  * Solved the Mountain car and Lunar Lander problems.
-                </pre>
+  * Solved the Mountain car and Lunar Lander problems. </pre>
                     </div>
                   </td>
                 </tr>
@@ -984,8 +1000,7 @@ essential for the control of a robot. Developed a teleoperation system for a car
 system received velocities in the local coordinate frame of the robot and through the inverse
 kinematics model of the vehicle these velocity commands were transformed to wheels’ speed and sent
 to the vehicle’s motors. This project was embedded in a Raspberry Pi3 to allow the remote control
-of the vehicle with a host computer through WIFI (Implemented in C/Linux).
-                </pre>
+of the vehicle with a host computer through WIFI (Implemented in C/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -1035,8 +1050,7 @@ Equipping robotic systems with novel localization and navigation stacks is cruci
 navigation. A localization and mapping system (laser-based SLAM) for a turtlebot2 in indoors was
 simulated. The system was capable to accurately localize the robot in a previously mapped
 environment and subsequently navigate to a specific position in an occupancy grid map (Implemented
-in C++/Linux).
-                </pre>
+in C++/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -1102,8 +1116,7 @@ segmentation. Canny edge detector was used to detect the lines of the road and a
 representation of the scene was employed to estimate the distance-to-objects in the road and
 avoid collision using only image-based methods.
 * Implemented a navigation stack in the Carla simulator with the use of grid world
-representations  and state machines for a simple navigation strategy.
-                </pre>
+representations  and state machines for a simple navigation strategy. </pre>
                     </div>
                   </td>
                 </tr>
@@ -1156,8 +1169,7 @@ these setbacks with the implementation of an image-based plate recognition syste
 convolutional neural networks (CNN) to enhance the current methods. The system was optimized and
 embedded in a Nvidia Jetson Nano to run in a low-cost computer at a recognition rate of 100ms per
 plate making it ideal to operate in the places mentioned before (Implemented in Python, C++,
-TensorRT/Linux).
-                </pre>
+TensorRT/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -1208,8 +1220,7 @@ most visited areas in an indoor space with a monocular camera. A feature tracker
 estimate the average flow of persons and a deep convolutional neural network was employed to obtain
 the segmentation of the floor in the scene. This information was merge together to ​gather relevant
 information about the people habits in shopping centers or crowded areas (Implemented in Python/
-Linux)
-                </pre>
+Linux) </pre>
                     </div>
                   </td>
                 </tr>
@@ -1258,8 +1269,7 @@ Implemented a low cost Calendula flower classification system with Tensorflow, A
 Arduino. The system used a deep convolutional neural network inception v3 trained with different
 Calendula flowers. When the system detected a Calendula flower, it sent a signal to an Arduino
 board and moved a servomotor to a specific point which allowed the correct classification of the
-flowers through a transportation band (Implemented in C, Python/Linux).
-                </pre>
+flowers through a transportation band (Implemented in C, Python/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -1305,7 +1315,7 @@ flowers through a transportation band (Implemented in C, Python/Linux).
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> March 22th 2022
+                    <strong>Updated</strong> April 18th 2022
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
