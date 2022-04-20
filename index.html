@@ -8,6 +8,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175789805-1"></script>
   <script type="text/javascript" src="hidebib.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!-- Academicons -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
   <!-- TO HAVE ICONS -->
@@ -270,7 +271,6 @@
                   <td></td>
                 </tr>
 
-
                 <!-- DINO Real Project -->
                 <tr onmouseout="dino_real_stop()" onmouseover="dino_real_start()">
                   <td
@@ -298,8 +298,8 @@
                       </papertitle>
                     </a>
                     <br>
-                    <strong>Miguel Saavedra-Ruiz</strong>
-                    <a href="https://sachamorin.github.io/dino/">Sacha Morin</a>,
+                    <strong>Miguel Saavedra-Ruiz</strong>,
+                    <a href="https://github.com/sachaMorin">Sacha Morin</a>,
                     <a href="https://liampaull.ca/">Liam Paull</a>
                     <br>
                     <em>Conference on Robotics and Vision (CRV) - (to appear)</em>, 2022 &nbsp <span
@@ -323,16 +323,18 @@
                     <div class="paper" id="dino_real_description">
                       <h6><a href="javascript:togglebib('dino_real_description')" class="togglebib">Visual Servoing navigation using pre-trained Self-Supervised Vision Transformers.</a></h6>
                       <pre xml:space="preserve">
-In this work, we consider the problem of learning a perception model for monocular robot
-navigation using few annotated images. Using a Vision Transformer (ViT) pretrained with a
-label-free self-supervised method, we successfully train a coarse image segmentation model
-for the Duckietown environment using 70 training images. Our model performs coarse image
-segmentation at the 8x8 patch level, and the inference resolution can be adjusted to balance
-prediction granularity and real-time perception constraints. We study how best to adapt a
-ViT to our task and environment, and find that some lightweight architectures can yield good
-single-image segmentations at a usable frame rate, even on CPU. The resulting perception model
-is used as the backbone for a simple yet robust visual servoing agent, which we deploy on a
-differential drive mobile robot to perform two tasks: lane following and obstacle avoidance. </pre>
+In this work, we consider the problem of learning a perception model for
+monocular robot navigation using few annotated images. Using a Vision
+Transformer (ViT) pretrained with a label-free self-supervised method, we
+successfully train a coarse image segmentation model for the Duckietown
+environment using 70 training images. Our model performs coarse image
+segmentation at the 8x8  patch level, and the inference resolution can be
+adjusted to balance prediction granularity and real-time perception constraints.
+We study how best to adapt a ViT to our task and environment, and find that some
+lightweight architectures can yield good single-image segmentations at a usable
+frame rate, even on CPU. The resulting perception model is used as the backbone
+for a simple yet robust visual servoing agent, which we deploy on a differential
+drive mobile robot to perform two tasks: lane following and obstacle avoidance. </pre>
                     </div>
                   </td>
                 </tr>
@@ -343,9 +345,10 @@ differential drive mobile robot to perform two tasks: lane following and obstacl
                   </td>
                 </tr>
 
+                <!-- Autonomous landing of a UAV Journal-->
                 <tr onmouseout="dals_stop()" onmouseover="dals_start()">
                   <td
-                    style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                          style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='dals_image'>
                         <img src='images/gazebo_dron_after.gif' width="160">
@@ -385,7 +388,7 @@ differential drive mobile robot to perform two tasks: lane following and obstacl
                       <a href="https://arxiv.org/abs/2108.06616">arXiv</a> /
                       <a href="https://www.youtube.com/watch?v=2NWR9Otdz-s&feature=youtu.be">video</a> /
                       <a href="javascript:togglebib('dals')" class="togglebib">bibtex</a>
-                    <pre xml:space="preserve">
+                      <pre xml:space="preserve">
 @article{9656574,
 	title        = {Monocular Visual Autonomous Landing System for Quadcopter Drones using Software in the Loop},
 	author       = {Saavedra-Ruiz, Miguel and Pinto-Vargas, Ana Maria and Romero-Cano, Victor},
@@ -396,38 +399,40 @@ differential drive mobile robot to perform two tasks: lane following and obstacl
 	pages        = {1--1},
 	doi          = {10.1109/MAES.2021.3115208}
 }                   </pre>
-                    </div>
-                    <p></p>
-                    <div class="paper" id="dals_description">
-                      <h6><a href="javascript:togglebib('dals_description')" class="togglebib">Autonomous landing system
-                          for a UAV on a terrestrial vehicle using robotics vision and control.</a></h6>
-                      <pre xml:space="default">
+                      <p></p>
+                      <div class="paper" id="dals_description">
+                        <h6><a href="javascript:togglebib('dals_description')" class="togglebib">Autonomous landing
+                          system for a UAV on a terrestrial vehicle using robotics vision and control.</a>
+                        </h6>
+                        <pre xml:space="preserve">
 My BEng degree project addressed the problem of the autonomous landing of a UAV
 with a landing platform located on the top of a ground vehicle. The project
-utilized vision-based techniques to detect the landing platform, a Kalman
-filter was tailored for the tracking phase and finally, a PID controller sent
-control commands to the flight controller of the UAV to land properly on the
-platform. Rigorous assessments were conducted through the simulation of the
-whole robotic stack with ROS and gazebo in the software in the loop provided by
-PX4. Ultimately, the system was tested in a custom DJI F-450 and embedded in a
-Odroid XU4. The system demonstrates a satisfactory performance and was able to
-land with a mean error of ten centimeters from the center of the landing
-platform (Implemented in Python, C++/Linux).
+utilized vision-based techniques to detect the landing platform, a Kalman filter
+was tailored for the tracking phase and finally, a PID controller sent control
+commands to the flight controller of the UAV to land properly on the platform.
+Rigorous assessments were conducted through the simulation of the whole robotic
+stack with ROS and gazebo in the software in the loop provided by PX4.
+Ultimately, the system was tested in a custom DJI F-450 and embedded in a Odroid
+XU4. The system demonstrates a satisfactory performance and was able to land
+with a mean error of ten centimeters from the center of the landing platform
+(Implemented in Python, C++/Linux).
 
-Autonomous landing is a capability that is essential to achieve the full potential
-of multi-rotor drones in many social and industrial applications. The implementation
-and testing of this capability on physical platforms is risky and resource-intensive;
-hence, in order to ensure both a sound design process and a safe deployment,
-simulations are required before implementing a physical prototype. This paper presents
-the development of a monocular visual system, using a software-in-the-loop methodology,
-that autonomously and efficiently lands a quadcopter drone on a predefined landing pad,
-thus reducing the risks of the physical testing stage. In addition to ensuring that
-the autonomous landing system as a whole fulfils the design requirements using a
-Gazebo-based simulation, our approach provides a tool for safe parameter tuning and
-design testing prior to physical implementation. Finally, the proposed monocular
-vision-only approach to landing pad tracking made it possible to effectively implement
-the system in an F450 quadcopter drone with the standard computational capabilities of
-an Odroid XU4 embedded processor. </pre>
+Autonomous landing is a capability that is essential to achieve the full
+potential of multi-rotor drones in many social and industrial applications. The
+implementation and testing of this capability on physical platforms is risky and
+resource-intensive; hence, in order to ensure both a sound design process and a
+safe deployment, simulations are required before implementing a physical
+prototype. This paper presents the development of a monocular visual system,
+using a software-in-the-loop methodology, that autonomously and efficiently
+lands a quadcopter drone on a predefined landing pad, thus reducing the risks of
+the physical testing stage. In addition to ensuring that the autonomous landing
+system as a whole fulfils the design requirements using a Gazebo-based
+simulation, our approach provides a tool for safe parameter tuning and design
+testing prior to physical implementation. Finally, the proposed monocular
+vision-only approach to landing pad tracking made it possible to effectively
+implement the system in an F450 quadcopter drone with the standard computational
+capabilities of an Odroid XU4 embedded processor.  </pre>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -438,8 +443,8 @@ an Odroid XU4 embedded processor. </pre>
                   </td>
                 </tr>
 
-
-                <tr onmouseout="ml3d_stop()" onmouseover="ml3d_start()" style="border-bottom: 5px solid #000;">
+                <!-- 3D object detection CVPR @ LatinX-->
+                <tr onmouseout="ml3d_stop()" onmouseover="ml3d_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
@@ -482,22 +487,25 @@ an Odroid XU4 embedded processor. </pre>
                             vehicles in the NuScenes dataset using classic Machine learning such as DBSCAN and SVMs.</a>
                         </h6>
                         <pre xml:space="preserve">
-3D object detection is a problem that has gained popularity among the research community due to
-its extensiveset of application on autonomous navigation, surveillance and pick-and-place. Most
-of the solutions proposed in the state-of-the-art are based on deep learning techniques and
-present astonishing results in terms of accuracy. Nevertheless, a set of problems inherits from
-this sort of solutions such as the need of enormous tagged datasets, extensive computational
-resources due to the complexity of the model and most of the time, no real-time inference.
-This work proposes an end-to-end classic Machine Learning (ML) pipeline to solve the
-3D object detection problem for cars. The proposed method is leveraged on the use of frustum
-region proposals to segment and estimate the parameters of the amodal 3D bouning box. Here we
-do not deal with the problem of 2D object detection as for most of the research community this
-is considered solved with ConvolutionalNeural Networks (CNN).
+3D object detection is a problem that has gained popularity among the research
+community due to its extensiveset of application on autonomous navigation,
+surveillance and pick-and-place. Most of the solutions proposed in the
+state-of-the-art are based on deep learning techniques and present astonishing
+results in terms of accuracy. Nevertheless, a set of problems inherits from this
+sort of solutions such as the need of enormous tagged datasets, extensive
+computational resources due to the complexity of the model and most of the time,
+no real-time inference. This work proposes an end-to-end classic Machine
+Learning (ML) pipeline to solve the 3D object detection problem for cars. The
+proposed method is leveraged on the use of frustum region proposals to segment
+and estimate the parameters of the amodal 3D bounding box. Here we do not deal
+with the problem of 2D object detection as for most of the research community
+this is considered solved with ConvolutionalNeural Networks (CNN).
 
-This task is addressed employing different ML techniques such as RANSAC for road segmentation and
-DBSCAN for clustering. Global features are extracted out of the segmented point cloud using
-The Ensemble of Shape Functions (ESF). Some feature are engineered through PCA and statistics.
-Finally, the amodal 3D bounding box parameters are estimated through a SVR regressor. </pre>
+This task is addressed employing different ML techniques such as RANSAC for road
+segmentation and DBSCAN for clustering. Global features are extracted out of the
+segmented point cloud using The Ensemble of Shape Functions (ESF). Some feature
+are engineered through PCA and statistics. Finally, the amodal 3D bounding box
+parameters are estimated through a SVR regressor. </pre>
                       </div>
                     </div>
                   </td>
@@ -509,6 +517,7 @@ Finally, the amodal 3D bounding box parameters are estimated through a SVR regre
                   </td>
                 </tr>
 
+                <!-- Detection system CCRA-->
                 <tr onmouseout="dtl_stop()" onmouseover="dtl_start()">
                   <td
                     style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
@@ -560,13 +569,15 @@ Finally, the amodal 3D bounding box parameters are estimated through a SVR regre
                         <h6><a href="javascript:togglebib('dtl_description')" class="togglebib">Object Detection and
                             tracking pipelines to detect a landing pad on the ground from a UAV.</a></h6>
                         <pre xml:space="preserve">
-Aerial robotic applications need to be endowed with systems capable to accurately locate objects of
-interest to perform specific tasks at hand. I Developed an embedded vision-based landing platform
-detection and tracking system with ROS and OpenCV. The system extended the capabilities of a
-SURF-based feature detector-descriptor that makes detections of a landing pad alongside a Kalman
-filter-based estimation module. The system demonstrated a considerable improvement over
-only-detector methods, diminishing the detection error and providing accurate estimations of the
-landing pad position (Implemented in C++/Linux). </pre>
+Aerial robotic applications need to be endowed with systems capable to
+accurately locate objects of interest to perform specific tasks at hand. I
+Developed an embedded vision-based landing platform detection and tracking
+system with ROS and OpenCV. The system extended the capabilities of a SURF-based
+feature detector-descriptor that makes detections of a landing pad alongside a
+Kalman filter-based estimation module. The system demonstrated a considerable
+improvement over only-detector methods, diminishing the detection error and
+providing accurate estimations of the landing pad position (Implemented in
+C++/Linux). </pre>
                       </div>
                     </div>
                   </td>
@@ -690,7 +701,7 @@ landing pad position (Implemented in C++/Linux). </pre>
                 <!-- Transfer Learning -->
                 <tr onmouseout="style_stop()" onmouseover="style_start()">
                   <td
-                    style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                     <div class="one">
                       <div class="two" id='style_image'>
                         <img src='images/style_after.gif' width="160">
@@ -724,15 +735,16 @@ landing pad position (Implemented in C++/Linux). </pre>
                       <h6><a href="javascript:togglebib('style_description')" class="togglebib">Style-transfer
                           implementarion based on the paper A neural algorithm of artistic style using VGG-19.</a></h6>
                       <pre xml:space="preserve">
-Implementation of Style-Transfer based on the original paper 'A neural algorithm of artistic style'.
-As stated by the authors, style-transfer is 'an artificial system based on a Deep Neural Network
-that creates artistic images of high perceptual quality'. In this work we aimed to replicate the
-original paper in a Pytorch-based implementation using as backbone a VGG-19 model. The results
-present how the implementation is capable to transfer the desired content and style to a different
-image and even create an aesthetic result from scratch.
+Implementation of Style-Transfer based on the original paper 'A neural algorithm
+of artistic style'. As stated by the authors, style-transfer is 'an artificial
+system based on a Deep Neural Network that creates artistic images of high
+perceptual quality'. In this work we aimed to replicate the original paper in a
+Pytorch-based implementation using as backbone a VGG-19 model. The results
+present how the implementation is capable to transfer the desired content and
+style to a different image and even create an aesthetic result from scratch.
 
-This work was locally deployed using docker-compose and web sockets in order the create a
-seamlessly implementation of style-transfer with an intuitive GUI. </pre>
+This work was locally deployed using docker-compose and web sockets in order the
+create a seamlessly implementation of style-transfer with an intuitive GUI. </pre>
                     </div>
                   </td>
                 </tr>
@@ -777,17 +789,18 @@ seamlessly implementation of style-transfer with an intuitive GUI. </pre>
                       <h6><a href="javascript:togglebib('rsnd_description')" class="togglebib">Robot localization,
                           Mapping, SLAM, path planning and navigation.</a></h6>
                       <pre xml:space="preserve">
-Implementation of different robotics vision projects. These are based on the robotics
-software engineer nanodegree provided by Udacity. All the projects were developed with ROS
-and tested in a gazebo-based simulated environment. Different topics were addressed
-such as Gazebo basic, ROS, robot localization, Mapping, SLAM, navigation and
-path planning. The projects are listed below
+ Implementation of different robotics vision projects. These are based on the
+robotics software engineer nanodegree provided by Udacity. All the projects were
+developed with ROS and tested in a gazebo-based simulated environment. Different
+topics were addressed such as Gazebo basic, ROS, robot localization, Mapping,
+SLAM, navigation and path planning. The projects are listed below
 
-  * How to use the model and building editor, plugins in Gazebo and more.
-  * Creating a ball chaser robot in ROS and Gazebo.
-  * Localization through Kalman Filter, Monte Carlo methods and ACML.
-  * Occupancy grid map generation, GridBased Fast Slam ROS package and RTAB-Map SLAM.
-  * The A* algorithm and robot navigation. </pre>
+    * How to use the model and building editor, plugins in Gazebo and more.
+    * Creating a ball chaser robot in ROS and Gazebo.
+    * Localization through Kalman Filter, Monte Carlo methods and ACML.
+    * Occupancy grid map generation, GridBased Fast Slam ROS package and
+      RTAB-Map SLAM.
+    * The A* algorithm and robot navigation.</pre>
                     </div>
                   </td>
                 </tr>
@@ -834,13 +847,16 @@ path planning. The projects are listed below
                       <h6><a href="javascript:togglebib('vio_description')" class="togglebib">Stereo Visual Odometry and
                           Visual Inertial Odometry pipelines to estimate the pose of a quad-rotor.</a></h6>
                       <pre xml:space="preserve">
-Implemented Stereo Visual Odometry and Visual Inertial Odometry pipelines to estimate the pose of a quad-rotor.
-The system works by taking subsequent image pairs and matching features throughout the test. Once those features
-are obtained, 3d-points coordinates were retrieved with the depth map of the images and the extrinsic camera
-calibration  matrix. Finally, the trajectory is estimated using 3D-2D Perspective-n-Point (PNP). As an additional
-step, the VO trajectory was used with the IMU data in an Error-State Extended Kalman Filter to estimate the pose
-even when most of the VO observations were dropped. Both VO and VIO showed good results estimating the trajectory
-of the UAV (Implemented in Python/Linux). </pre>
+Implemented Stereo Visual Odometry and Visual Inertial Odometry pipelines to
+estimate the pose of a quad-rotor. The system works by taking subsequent image
+pairs and matching features throughout the test. Once those features are
+obtained, 3d-points coordinates were retrieved with the depth map of the images
+and the extrinsic camera calibration  matrix. Finally, the trajectory is
+estimated using 3D-2D Perspective-n-Point (PNP). As an additional step, the VO
+trajectory was used with the IMU data in an Error-State Extended Kalman Filter
+to estimate the pose even when most of the VO observations were dropped. Both VO
+and VIO showed good results estimating the trajectory of the UAV (Implemented in
+Python/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -887,11 +903,12 @@ of the UAV (Implemented in Python/Linux). </pre>
                           autonomous landing system for a UAV with Gazebo, ROS and the Software in the loop provided by
                           PX4.</a></h6>
                       <pre xml:space="preserve">
-Simulated an autonomous landing system for a UAV with Gazebo, ROS and the Software in the loop
-provided by PX4. The project consisted in the development of different packages in C++ and Python
-which allowed the assessment of an autonomous landing system. This robotics simulation allowed the
-thoroughly development and evaluation of a landing pipeline for a UAV (Implemented in Python, C++/
-Linux). </pre>
+Simulated an autonomous landing system for a UAV with Gazebo, ROS and the
+Software in the loop provided by PX4. The project consisted in the development
+of different packages in C++ and Python which allowed the assessment of an
+autonomous landing system. This robotics simulation allowed the thoroughly
+development and evaluation of a landing pipeline for a UAV (Implemented in
+Python, C++/ Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -937,18 +954,20 @@ Linux). </pre>
                       <h6><a href="javascript:togglebib('rlSpe_description')" class="togglebib">Lunar Lander, Mountain
                           Car and Pendulum classical control tasks solved using RL.</a></h6>
                       <pre xml:space="preserve">
-Trained a lunar lander in a simulated environment with Reinforcement Learning.  The agent was
-implemented with the Expected-Sarsa algorithm and used a Neural networkfor for action-values
-approximation. The algorithm was capable to do planning steps with experience replay and learn a
-policy for the landing of the agent. Thorughout the specialization I implemented different
-projects, some of those are listed below.
+Trained a lunar lander in a simulated environment with Reinforcement Learning.
+The agent was implemented with the Expected-Sarsa algorithm and used a Neural
+networkfor for action-values approximation. The algorithm was capable to do
+planning steps with experience replay and learn a policy for the landing of the
+agent. Thorughout the specialization I implemented different projects, some of
+those are listed below.
 
-  * Solved a Gridworld city with Dynamic programming to find an optimal policie.
-  * Implemented a Dyna-Q and Dyna-Q+ algorithms in a changing maze environment to assess the
-  performance of planning methods in RL.
-  * Implemented an Average Reward Softmax Actor-Critic algorithm using Tile-coding to solve the
-  Pendulum Swing-Up continuous problem.
-  * Solved the Mountain car and Lunar Lander problems. </pre>
+    * Solved a Gridworld city with Dynamic programming to find an optimal
+      policie.
+    * Implemented a Dyna-Q and Dyna-Q+ algorithms in a changing maze environment
+      to assess the performance of planning methods in RL.
+    * Implemented an Average Reward Softmax Actor-Critic algorithm using
+      Tile-coding to solve the Pendulum Swing-Up continuous problem.
+    * Solved the Mountain car and Lunar Lander problems. </pre>
                     </div>
                   </td>
                 </tr>
@@ -995,12 +1014,14 @@ projects, some of those are listed below.
                       <h6><a href="javascript:togglebib('teleop_description')" class="togglebib">Teleoperation system
                           for a car-like robot through mathematical modelling.</a></h6>
                       <pre xml:space="preserve">
-Mathematical modelling of unmanned groundvehicles (UGV) is a well studied problem in robotics and
-essential for the control of a robot. Developed a teleoperation system for a car-like robot. The
-system received velocities in the local coordinate frame of the robot and through the inverse
-kinematics model of the vehicle these velocity commands were transformed to wheels’ speed and sent
-to the vehicle’s motors. This project was embedded in a Raspberry Pi3 to allow the remote control
-of the vehicle with a host computer through WIFI (Implemented in C/Linux). </pre>
+Mathematical modelling of unmanned groundvehicles (UGV) is a well studied
+problem in robotics and essential for the control of a robot. Developed a
+teleoperation system for a car-like robot. The system received velocities in the
+local coordinate frame of the robot and through the inverse kinematics model of
+the vehicle these velocity commands were transformed to wheels’ speed and sent
+to the vehicle’s motors. This project was embedded in a Raspberry Pi3 to allow
+the remote control of the vehicle with a host computer through WIFI (Implemented
+in C/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -1046,11 +1067,12 @@ of the vehicle with a host computer through WIFI (Implemented in C/Linux). </pre
                       <h6><a href="javascript:togglebib('mturtle_description')" class="togglebib">Simulation of a
                           localization and mapping system (laser-based SLAM) for a turtlebot2 in indoors.</a></h6>
                       <pre xml:space="preserve">
-Equipping robotic systems with novel localization and navigation stacks is crucial for autonomous
-navigation. A localization and mapping system (laser-based SLAM) for a turtlebot2 in indoors was
-simulated. The system was capable to accurately localize the robot in a previously mapped
-environment and subsequently navigate to a specific position in an occupancy grid map (Implemented
-in C++/Linux). </pre>
+Equipping robotic systems with novel localization and navigation stacks is
+crucial for autonomous navigation. A localization and mapping system
+(laser-based SLAM) for a turtlebot2 in indoors was simulated. The system was
+capable to accurately localize the robot in a previously mapped environment and
+subsequently navigate to a specific position in an occupancy grid map
+(Implemented in C++/Linux). </pre>
                     </div>
                   </td>
                 </tr>
@@ -1099,24 +1121,27 @@ in C++/Linux). </pre>
                           control, state estimation with Kalman filters, visual perception and motion planning for
                           self-driving vehicles.</a></h6>
                       <pre xml:space="preserve">
-This work involved four capstone projects in the area of self-driving cars. Topics such as
-wheeled-robot mathematical modelling through dynamical modelling (tire model), lateral and
-longitudinal control, state estimation with Kalman filters, visual perception and motion planning
-were addressed. Most of the projects were tested in the Carla Simulator to assess performance. A
-description of the projects developed are presented below.
+This work involved four capstone projects in the area of self-driving cars.
+Topics such as wheeled-robot mathematical modelling through dynamical modelling
+(tire model), lateral and longitudinal control, state estimation with Kalman
+filters, visual perception and motion planning were addressed. Most of the
+projects were tested in the Carla Simulator to assess performance. A description
+of the projects developed are presented below.
 
-* Control of a car-like robot through a longitudinal and lateral controller. The longitudinal
-controller was implemented with a PID and the lateral controller was a cross-track error
-controller.
-* Implementation of an error state extended Kalman Filter for the estimation of the trajectory
-of a vehicle. The filter fused information from a GNSS and IMU alongside the dynamic model of
-the vehicle to produce an accurate estimation of its trajectory on the space.
-* Robotics perception stack which detected the drivable space of the vehicle through image
-segmentation. Canny edge detector was used to detect the lines of the road and a depth
-representation of the scene was employed to estimate the distance-to-objects in the road and
-avoid collision using only image-based methods.
-* Implemented a navigation stack in the Carla simulator with the use of grid world
-representations  and state machines for a simple navigation strategy. </pre>
+    * Control of a car-like robot through a longitudinal and lateral controller.
+      The longitudinal controller was implemented with a PID and the lateral
+      controller was a cross-track error controller.
+    * Implementation of an error state extended Kalman Filter for the estimation
+      of the trajectory of a vehicle. The filter fused information from a GNSS
+      and IMU alongside the dynamic model of the vehicle to produce an accurate
+      destimation of its trajectory on the space.
+    * Robotics perception stack which detected the drivable space of the vehicle
+      through image segmentation. Canny edge detector was used to detect the
+      lines of the road and a depth representation of the scene was employed to
+      estimate the distance-to-objects in the road and avoid collision using only
+      image-based methods.
+    * Implemented a navigation stack in the Carla simulator with the use of grid
+      world representations  and state machines for a simple navigation strategy. </pre>
                     </div>
                   </td>
                 </tr>
@@ -1150,7 +1175,7 @@ representations  and state machines for a simple navigation strategy. </pre>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <a href="data/licensePlate.txt">
-                      <papertitle>​Low-cost license plate recognition system based on CNN</papertitle>
+                      <papertitle>Low-cost license plate recognition system based on CNN</papertitle>
                     </a>
                     <br>
                     <strong>Miguel Saavedra-Ruiz</strong>
@@ -1161,14 +1186,16 @@ representations  and state machines for a simple navigation strategy. </pre>
                       <h6><a href="javascript:togglebib('lplate_description')" class="togglebib">Implemented a low-cost
                           license plate recognition systems using deep learning techniques.</a></h6>
                       <pre xml:space="preserve">
-Automatic license plate recognition (LPR) is indispensable for the admission and flow control of
-vehicles into parking lots orcondominiums.  Generally, these systems are based on classic computer
-vision techniques owing to their processing speed, however, these approaches can lead to inaccurate
-detections and vague performance on non-ideal environmental conditions. My work tried to surpass
-these setbacks with the implementation of an image-based plate recognition system using
-convolutional neural networks (CNN) to enhance the current methods. The system was optimized and
-embedded in a Nvidia Jetson Nano to run in a low-cost computer at a recognition rate of 100ms per
-plate making it ideal to operate in the places mentioned before (Implemented in Python, C++,
+Automatic license plate recognition (LPR) is indispensable for the admission and
+flow control of vehicles into parking lots orcondominiums.  Generally, these
+systems are based on classic computer vision techniques owing to their
+processing speed, however, these approaches can lead to inaccurate detections
+and vague performance on non-ideal environmental conditions. My work tried to
+surpass these setbacks with the implementation of an image-based plate
+recognition system using convolutional neural networks (CNN) to enhance the
+current methods. The system was optimized and embedded in a Nvidia Jetson Nano
+to run in a low-cost computer at a recognition rate of 100ms per plate making it
+ideal to operate in the places mentioned before (Implemented in Python, C++,
 TensorRT/Linux). </pre>
                     </div>
                   </td>
@@ -1215,69 +1242,65 @@ TensorRT/Linux). </pre>
                           on computer vision techniques to stochastically estimate the most visited areas in an indoor
                           space with a monocular camera.</a></h6>
                       <pre xml:space="preserve">
-Implemented a heat map generator based on computer vision techniques to stochastically estimate the
-most visited areas in an indoor space with a monocular camera. A feature tracker method was used to
-estimate the average flow of persons and a deep convolutional neural network was employed to obtain
-the segmentation of the floor in the scene. This information was merge together to ​gather relevant
-information about the people habits in shopping centers or crowded areas (Implemented in Python/
-Linux) </pre>
+Implemented a heat map generator based on computer vision techniques to
+stochastically estimate the most visited areas in an indoor space with a
+monocular camera. A feature tracker method was used to estimate the average flow
+of persons and a deep convolutional neural network was employed to obtain the
+segmentation of the floor in the scene. This information was merge together to
+gather relevant information about the people habits in shopping centers or
+crowded areas (Implemented in Python/ Linux) </pre>
                     </div>
                   </td>
                 </tr>
-                <!-- Break of line-->
-                <tr>
-                  <td colspan="2" style="padding:0; margin:0;">
-                    <hr style="padding:0; margin:0;">
-                  </td>
-                </tr>
-
-                <!-- Calendula Flower Experiments -->
-                <tr onmouseout="calenF_stop()" onmouseover="calenF_start()">
-                  <td
-                    style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
-                    <div class="one">
-                      <div class="two" id='calenF_image'>
-                        <img src='images/calendula_after.jpg' width="160">
-                      </div>
-                      <img src='images/calendula_after.jpg' width="160">
-                    </div>
-                    <script type="text/javascript">
-                      function calenF_start() {
-                        document.getElementById('calenF_image').style.opacity = "1";
-                      }
-
-                      function calenF_stop() {
-                        document.getElementById('calenF_image').style.opacity = "0";
-                      }
-                      calenF_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="data/calendulaFlower.txt">
-                      <papertitle>​Calendula Flower Classification System</papertitle>
-                    </a>
-                    <br>
-                    <strong>Miguel Saavedra-Ruiz</strong>
-                    <br>
-                    <p></p>
-
-                    <div class="paper" id="calenF_description">
-                      <h6><a href="javascript:togglebib('calenF_description')" class="togglebib">Implementation of a
-                          low-cost Calendula flower classification system using CNN.</a></h6>
-                      <pre xml:space="preserve">
-Implemented a low cost Calendula flower classification system with Tensorflow, Android Studio and
-Arduino. The system used a deep convolutional neural network inception v3 trained with different
-Calendula flowers. When the system detected a Calendula flower, it sent a signal to an Arduino
-board and moved a servomotor to a specific point which allowed the correct classification of the
-flowers through a transportation band (Implemented in C, Python/Linux). </pre>
-                    </div>
-                  </td>
-                </tr>
-
               </tbody>
             </table>
           </div>
           <br>
+
+<!--                &lt;!&ndash; Calendula Flower Experiments &ndash;&gt;-->
+<!--                <tr onmouseout="calenF_stop()" onmouseover="calenF_start()">-->
+<!--                  <td-->
+<!--                    style="padding-top:2%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">-->
+<!--                    <div class="one">-->
+<!--                      <div class="two" id='calenF_image'>-->
+<!--                        <img src='images/calendula_after.jpg' width="160">-->
+<!--                      </div>-->
+<!--                      <img src='images/calendula_after.jpg' width="160">-->
+<!--                    </div>-->
+<!--                    <script type="text/javascript">-->
+<!--                      function calenF_start() {-->
+<!--                        document.getElementById('calenF_image').style.opacity = "1";-->
+<!--                      }-->
+
+<!--                      function calenF_stop() {-->
+<!--                        document.getElementById('calenF_image').style.opacity = "0";-->
+<!--                      }-->
+<!--                      calenF_stop()-->
+<!--                    </script>-->
+<!--                  </td>-->
+<!--                  <td style="padding:20px;width:75%;vertical-align:middle">-->
+<!--                    <a href="data/calendulaFlower.txt">-->
+<!--                      <papertitle>​Calendula Flower Classification System</papertitle>-->
+<!--                    </a>-->
+<!--                    <br>-->
+<!--                    <strong>Miguel Saavedra-Ruiz</strong>-->
+<!--                    <br>-->
+<!--                    <p></p>-->
+
+<!--                    <div class="paper" id="calenF_description">-->
+<!--                      <h6><a href="javascript:togglebib('calenF_description')" class="togglebib">Implementation of a-->
+<!--                          low-cost Calendula flower classification system using CNN.</a></h6>-->
+<!--                      <pre xml:space="preserve">-->
+<!--Implemented a low cost Calendula flower classification system with Tensorflow, Android Studio and-->
+<!--Arduino. The system used a deep convolutional neural network inception v3 trained with different-->
+<!--Calendula flowers. When the system detected a Calendula flower, it sent a signal to an Arduino-->
+<!--board and moved a servomotor to a specific point which allowed the correct classification of the-->
+<!--flowers through a transportation band (Implemented in C, Python/Linux). </pre>-->
+<!--                    </div>-->
+<!--                  </td>-->
+<!--                </tr>-->
+
+
 
           <!-- Certificates -->
           <div class="containersmall" id="others">
@@ -1315,7 +1338,7 @@ flowers through a transportation band (Implemented in C, Python/Linux). </pre>
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> April 18th 2022
+                    <strong>Updated</strong> April 19th 2022
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
