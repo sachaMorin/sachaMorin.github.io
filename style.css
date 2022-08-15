@@ -227,6 +227,10 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.aligncenter {
+    text-align: center;
+}
+
 /*pre.code*/
 /*{*/
 /*	background-color: #e0e0e0;*/
