@@ -215,6 +215,93 @@
                   <td></td>
                 </tr>
 
+                <!-- GRAE-->
+                <tr onmouseout="grae_real_stop()" onmouseover="grae_real_start()">
+                  <td
+                          style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                    <div class="aligned">
+                      <div class="two" id='grae_real_seg'>
+                        <!--                        <img src='images/grae_real_before.png' width="160">-->
+                      </div>
+                      <img src='images/grae_real_after.gif' width="160">
+                    </div>
+                    <script type="text/javascript">
+                      function grae_real_start() {
+                        document.getElementById('grae_real_seg').style.opacity = "1";
+                      }
+
+                      function grae_real_stop() {
+                        document.getElementById('grae_real_seg').style.opacity = "0";
+                      }
+                      grae_real_stop()
+                    </script>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href="https://github.com/KevinMoonLab/GRAE">
+                      <papertitle>Geometry Regularized Autoencoders (GRAE)
+                      </papertitle>
+                    </a>
+                    <br>
+                    <a href="https://scholar.google.com/citations?user=aplY5_gAAAAJ&hl=es">Andres F. Duque &#42;</a>,
+                    <strong>Sacha Morin &#42;</strong>,
+                    <a href="https://www.guywolf.org/">Guy Wolf</a>,
+                    <a href="https://sites.google.com/a/umich.edu/kevin-r-moon/home">Kevin R. Moon</a>,
+                    <br>
+                    <em>IEEE International Conference on Big Data</em>, 2020
+                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 2022
+                    <br>
+                    <div class="paper" id="grae_real">
+                      <a href="https://github.com/KevinMoonLab/GRAE">code</a> /
+                      <a href="https://ieeexplore.ieee.org/abstract/document/9950332">paper</a> /
+                      <a href="https://github.com/KevinMoonLab/GRAE">webpage</a> /
+                      <a href="javascript:togglebib('grae_real')" class="togglebib">bibtex</a>
+                      <pre id="myid" xml:space="preserve">
+                        @article{duque2022geometry,
+  title={Geometry Regularized Autoencoders},
+  author={Duque, Andres F and Morin, Sacha and Wolf, Guy and Moon, Kevin R},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2022},
+  publisher={IEEE}
+}                     </pre>
+                    </div>
+                    <p></p>
+                    <div class="paper" id="grae_real_description">
+                      <h6><a href="javascript:togglebib('grae_real_description')" class="togglebib">Manifold-based regularization for learning better representations in autoencoders.</a></h6>
+                      <pre>
+A fundamental task in data exploration is to extract simplified
+low dimensional representations that capture intrinsic geometry
+in data, especially for faithfully visualizing data in two or
+three dimensions. Common approaches to this task use kernel methods
+for manifold learning. However, these methods typically only provide an
+embedding of fixed input data and cannot extend to new data points.
+Autoencoders have also recently become popular for representation
+learning. But while they naturally compute feature extractors that
+are both extendable to new data and invertible (i.e., reconstructing
+original features from latent representation), they have limited capabilities
+to follow global intrinsic geometry compared to kernel-based manifold learning.
+We present a new method for integrating both approaches by incorporating a
+geometric regularization term in the bottleneck of the autoencoder. Our
+regularization, based on the diffusion potential distances from the
+recently-proposed PHATE visualization method, encourages the learned latent
+representation to follow intrinsic data geometry, similar to manifold learning
+algorithms, while still enabling faithful extension to new data and reconstruction
+of data in the original feature space from latent coordinates. We compare our
+approach with leading kernel methods and autoencoder models for manifold learning
+to provide qualitative and quantitative evidence of our advantages in preserving
+intrinsic structure, out of sample extension, and reconstruction. Our method is easily
+implemented for big-data applications, whereas other methods are limited in this regard.
+                      </pre>
+                    </div>
+                  </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                  <td colspan="2" style="padding:0; margin:0;">
+                    <hr style="padding:0; margin:0;">
+                  </td>
+                </tr>
+
+
                 <!-- DINO Real Project -->
                 <tr onmouseout="dino_real_stop()" onmouseover="dino_real_start()">
                   <td
@@ -342,91 +429,7 @@ drive mobile robot to perform two tasks: lane following and obstacle avoidance. 
                 </tr>
 
 
-                <!-- GRAE-->
-                <tr onmouseout="grae_real_stop()" onmouseover="grae_real_start()">
-                  <td
-                          style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
-                    <div class="aligned">
-                      <div class="two" id='grae_real_seg'>
-<!--                        <img src='images/grae_real_before.png' width="160">-->
-                      </div>
-                      <img src='images/grae_real_after.gif' width="160">
-                    </div>
-                    <script type="text/javascript">
-                      function grae_real_start() {
-                        document.getElementById('grae_real_seg').style.opacity = "1";
-                      }
 
-                      function grae_real_stop() {
-                        document.getElementById('grae_real_seg').style.opacity = "0";
-                      }
-                      grae_real_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://github.com/KevinMoonLab/GRAE">
-                      <papertitle>Geometry Regularized Autoencoders (GRAE)
-                      </papertitle>
-                    </a>
-                    <br>
-                    <a href="https://scholar.google.com/citations?user=aplY5_gAAAAJ&hl=es">Andres F. Duque &#42;</a>,
-                    <strong>Sacha Morin &#42;</strong>,
-                    <a href="https://www.guywolf.org/">Guy Wolf</a>,
-                    <a href="https://sites.google.com/a/umich.edu/kevin-r-moon/home">Kevin R. Moon</a>,
-                    <br>
-                    <em>IEEE International Conference on Big Data</em>, 2020
-                    <br>
-                    <div class="paper" id="grae_real">
-                      <a href="https://github.com/KevinMoonLab/GRAE">code</a> /
-                      <a href="https://arxiv.org/abs/2007.07142">arXiv</a> /
-                      <a href="https://github.com/KevinMoonLab/GRAE">webpage</a> /
-                      <a href="javascript:togglebib('grae_real')" class="togglebib">bibtex</a>
-                      <pre id="myid" xml:space="preserve">
-@inproceedings{duque2020extendable,
-  title={Extendable and invertible manifold learning with geometry regularized autoencoders},
-  author={Duque, Andr{\'e}s F and Morin, Sacha and Wolf, Guy and Moon, Kevin},
-  booktitle={2020 IEEE International Conference on Big Data (Big Data)},
-  pages={5027--5036},
-  year={2020},
-  organization={IEEE}
-}                     </pre>
-                    </div>
-                    <p></p>
-                    <div class="paper" id="grae_real_description">
-                      <h6><a href="javascript:togglebib('grae_real_description')" class="togglebib">Manifold-based regularization for learning better representations in autoencoders.</a></h6>
-                      <pre>
-A fundamental task in data exploration is to extract simplified
-low dimensional representations that capture intrinsic geometry
-in data, especially for faithfully visualizing data in two or
-three dimensions. Common approaches to this task use kernel methods
-for manifold learning. However, these methods typically only provide an
-embedding of fixed input data and cannot extend to new data points.
-Autoencoders have also recently become popular for representation
-learning. But while they naturally compute feature extractors that
-are both extendable to new data and invertible (i.e., reconstructing
-original features from latent representation), they have limited capabilities
-to follow global intrinsic geometry compared to kernel-based manifold learning.
-We present a new method for integrating both approaches by incorporating a
-geometric regularization term in the bottleneck of the autoencoder. Our
-regularization, based on the diffusion potential distances from the
-recently-proposed PHATE visualization method, encourages the learned latent
-representation to follow intrinsic data geometry, similar to manifold learning
-algorithms, while still enabling faithful extension to new data and reconstruction
-of data in the original feature space from latent coordinates. We compare our
-approach with leading kernel methods and autoencoder models for manifold learning
-to provide qualitative and quantitative evidence of our advantages in preserving
-intrinsic structure, out of sample extension, and reconstruction. Our method is easily
-implemented for big-data applications, whereas other methods are limited in this regard.
-                      </pre>
-                    </div>
-                  </td>
-                </tr>
-                <!-- Break of line-->
-                <tr>
-                  <td colspan="2" style="padding:0; margin:0;">
-                    <hr style="padding:0; margin:0;">
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>
