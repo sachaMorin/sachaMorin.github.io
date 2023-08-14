@@ -151,6 +151,18 @@
                       <heading>News</heading>
                     </p>
                     <ul>
+                     <li>
+                         <strong>[July 2023]</strong> I was a participant in the  <a href="https://robotics-summerschool.ethz.ch/">ETH Robotics Summer School</a> in Geneva, Switzerland. We worked on an autonomous rough-terrain UGV for search and rescue operations.
+                     </li>
+                      <li>
+                          <strong>[June 2023]</strong> I was one of the organizers of the  <a href="https://mila.quebec/en/robotics-summer-school-2023/">2023 Mila Robotics Summer School</a>.
+                      </li>
+                        <li>
+                            <strong>[May 2023]</strong> I was awarded the <a href="https://www.nserc-crsng.gc.ca/students-etudiants/pg-cs/bellandpostgrad-belletsuperieures_eng.asp">NSERC PGS D Scholarship</a>!
+                        </li>
+                        <li>
+                            <strong>[May 2023]</strong> I was awarded the <a href="https://frq.gouv.qc.ca/en/program/frqnt-doctoral-training-scholarships/">FRQNT Doctoral Scholarship</a>!
+                        </li>
                       <li>
                         <strong>[January 2023]</strong> I will be TA for  <a href="https://admission.umontreal.ca/cours-et-horaires/cours/stt-3795/">STT3795 - Theoretical Foundations of Data Science</a>.
                       </li>
@@ -229,6 +241,85 @@ Student Intersectoral Committee</a> for 2022-2023!
                     </p>
                   </td>
                   <td></td>
+                </tr>
+                <!-- One4All -->
+                <tr onmouseout="o4a_real_stop()" onmouseover="o4a_real_start()">
+                    <td
+                            style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                        <div class="aligned">
+                            <!--                      <div class="two" id='o4a_real_seg'>-->
+                            <!--                        <img src='images/o4a_real_after.gif' width="160">-->
+                            <!--                      </div>-->
+                            <img src='images/o4a.gif' width="160">
+                        </div>
+                        <script type="text/javascript">
+                            function o4a_real_start() {
+                                document.getElementById('o4a_real_seg').style.opacity = "1";
+                            }
+
+                            function o4a_real_stop() {
+                                document.getElementById('o4a_real_seg').style.opacity = "0";
+                            }
+                            o4a_real_stop()
+                        </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://montrealrobotics.ca/o4a/">
+                            <papertitle>One-4-All: Neural Potential Fields for Embodied Navigation
+                            </papertitle>
+                        </a>
+                        <br>
+                        <strong>Sacha Morin &#42;</strong>,
+                        <a href="https://mikes96.github.io/">Miguel Saavedra-Ruiz &#42;</a>,
+                        <a href="https://liampaull.ca/">Liam Paull</a>
+                        <br>
+                        <em>IROS</em>, 2023
+                        <br>
+                        <div class="paper" id="o4a_real">
+                            <a href="https://github.com/montrealrobotics/one4all">code</a> /
+                            <a href="https://arxiv.org/abs/2303.04011">arXiv</a> /
+                            <a href="https://montrealrobotics.ca/o4a/">webpage</a> /
+                            <a href="javascript:togglebib('o4a_real')" class="togglebib">bibtex</a>
+                            <pre id="myid" xml:space="preserve">
+@article{morin2023one,
+	title        = {One-4-All: Neural Potential Fields for Embodied Navigation},
+	author       = {Morin, Sacha and Saavedra-Ruiz, Miguel and Paull, Liam},
+	year         = 2023,
+	journal      = {arXiv preprint arXiv:2303.04011}
+}</pre>
+
+                        </div>
+                        <p></p>
+                        <div class="paper" id="o4a_real_description">
+                            <h6><a href="javascript:togglebib('o4a_real_description')" class="togglebib">An end-to-end fully
+                                parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></h6>
+                            <pre xml:space="preserve">
+A fundamental task in robotics is to navigate between two locations.
+In particular, real-world navigation can require long-horizon planning
+using high-dimensional RGB images, which poses a substantial challenge
+for end-to-end learning-based approaches. Current semi-parametric methods
+instead achieve long-horizon navigation by combining learned modules with
+a topological memory of the environment, often represented as a graph over
+previously collected images. However, using these graphs in practice typically
+involves tuning a number of pruning heuristics to avoid spurious edges, limit
+runtime memory usage and allow reasonably fast graph queries. In this work,
+we present One-4-All (O4A), a method leveraging self-supervised and manifold
+learning to obtain a graph-free, end-to-end navigation pipeline in which the
+goal is specified as an image. Navigation is achieved by greedily minimizing
+a potential function defined continuously over the O4A latent space. Our system
+is trained offline on non-expert exploration sequences of RGB data and controls,
+and does not require any depth or pose measurements. We show that O4A can reach
+long-range goals in 8 simulated Gibson indoor environments, and further demonstrate
+successful real-world navigation using a Jackal UGV platform.
+                      </pre>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Break of line-->
+                <tr>
+                    <td colspan="2" style="padding:0; margin:0;">
+                        <hr style="padding:0; margin:0;">
+                    </td>
                 </tr>
 
                 <!-- GRAE-->
@@ -465,85 +556,6 @@ drive mobile robot to perform two tasks: lane following and obstacle avoidance. 
                     </p>
                   </td>
                   <td></td>
-                </tr>
-                <!-- One4All -->
-                <tr onmouseout="o4a_real_stop()" onmouseover="o4a_real_start()">
-                  <td
-                          style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
-                    <div class="aligned">
-<!--                      <div class="two" id='o4a_real_seg'>-->
-<!--                        <img src='images/o4a_real_after.gif' width="160">-->
-<!--                      </div>-->
-                      <img src='images/o4a.gif' width="160">
-                    </div>
-                    <script type="text/javascript">
-                      function o4a_real_start() {
-                        document.getElementById('o4a_real_seg').style.opacity = "1";
-                      }
-
-                      function o4a_real_stop() {
-                        document.getElementById('o4a_real_seg').style.opacity = "0";
-                      }
-                      o4a_real_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://montrealrobotics.ca/o4a/">
-                      <papertitle>One-4-All: Neural Potential Fields for Embodied Navigation
-                      </papertitle>
-                    </a>
-                    <br>
-                    <strong>Sacha Morin &#42;</strong>,
-                    <a href="https://mikes96.github.io/">Miguel Saavedra-Ruiz &#42;</a>,
-                    <a href="https://liampaull.ca/">Liam Paull</a>
-                    <br>
-                    <em>Preprint</em>, 2023
-                    <br>
-                    <div class="paper" id="o4a_real">
-                      <a href="https://github.com/montrealrobotics/one4all">code</a> /
-                      <a href="https://arxiv.org/abs/2303.04011">arXiv</a> /
-                      <a href="https://montrealrobotics.ca/o4a/">webpage</a> /
-                      <a href="javascript:togglebib('o4a_real')" class="togglebib">bibtex</a>
-                      <pre id="myid" xml:space="preserve">
-@article{morin2023one,
-	title        = {One-4-All: Neural Potential Fields for Embodied Navigation},
-	author       = {Morin, Sacha and Saavedra-Ruiz, Miguel and Paull, Liam},
-	year         = 2023,
-	journal      = {arXiv preprint arXiv:2303.04011}
-}</pre>
-
-                    </div>
-                    <p></p>
-                    <div class="paper" id="o4a_real_description">
-                      <h6><a href="javascript:togglebib('o4a_real_description')" class="togglebib">An end-to-end fully
-                        parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></h6>
-                      <pre xml:space="preserve">
-A fundamental task in robotics is to navigate between two locations.
-In particular, real-world navigation can require long-horizon planning
-using high-dimensional RGB images, which poses a substantial challenge
-for end-to-end learning-based approaches. Current semi-parametric methods
-instead achieve long-horizon navigation by combining learned modules with
-a topological memory of the environment, often represented as a graph over
-previously collected images. However, using these graphs in practice typically
-involves tuning a number of pruning heuristics to avoid spurious edges, limit
-runtime memory usage and allow reasonably fast graph queries. In this work,
-we present One-4-All (O4A), a method leveraging self-supervised and manifold
-learning to obtain a graph-free, end-to-end navigation pipeline in which the
-goal is specified as an image. Navigation is achieved by greedily minimizing
-a potential function defined continuously over the O4A latent space. Our system
-is trained offline on non-expert exploration sequences of RGB data and controls,
-and does not require any depth or pose measurements. We show that O4A can reach
-long-range goals in 8 simulated Gibson indoor environments, and further demonstrate
-successful real-world navigation using a Jackal UGV platform.
-                      </pre>
-                    </div>
-                  </td>
-                </tr>
-                <!-- Break of line-->
-                <tr>
-                  <td colspan="2" style="padding:0; margin:0;">
-                    <hr style="padding:0; margin:0;">
-                  </td>
                 </tr>
 
                 <!-- StepMix -->
