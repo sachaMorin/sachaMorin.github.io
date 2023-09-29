@@ -196,11 +196,11 @@
                             <br>
                             <em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2023
                             <br>
-                            <div class="paper" id="o4a_real">
+                            <div class="paper" id="o4a_real_ft">
                                 <a href="https://github.com/montrealrobotics/one4all">code</a> /
                                 <a href="https://arxiv.org/abs/2303.04011">arXiv</a> /
                                 <a href="https://montrealrobotics.ca/o4a/">webpage</a> /
-                                <a href="javascript:togglebib('o4a_real')" class="togglebib">bibtex</a>
+                                <a href="javascript:togglebib('o4a_real_ft')" class="togglebib">bibtex</a>
                                 <pre id="myid" xml:space="preserve">
 @article{morin2023one,
 	title        = {One-4-All: Neural Potential Fields for Embodied Navigation},
@@ -211,8 +211,8 @@
 
                             </div>
                             <p></p>
-                            <div class="paper" id="o4a_real_description">
-                                <h6><a href="javascript:togglebib('o4a_real_description')" class="togglebib">An end-to-end fully
+                            <div class="paper" id="o4a_real_description_ft">
+                                <h6><a href="javascript:togglebib('o4a_real_description_ft')" class="togglebib">An end-to-end fully
                                     parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></h6>
                                 <pre xml:space="preserve">
 A fundamental task in robotics is to navigate between two locations.
@@ -236,6 +236,99 @@ successful real-world navigation using a Jackal UGV platform.
                             </div>
                         </td>
                     </tr>
+
+                    <!-- Break of line-->
+                    <tr>
+                        <td colspan="2" style="padding:0; margin:0;">
+                            <hr style="padding:0; margin:0;">
+                        </td>
+                    </tr>
+
+                     <!-- ConceptGraphs -->
+                <tr onmouseout="concept_graphs_stop()" onmouseover="concept_graphs_start()">
+                    <td
+                            style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
+                        <div class="aligned">
+                            <!--                      <div class="two" id='o4a_real_seg'>-->
+                            <!--                        <img src='images/o4a_real_after.gif' width="160">-->
+                            <!--                      </div>-->
+                            <img src='images/conceptgraphs.gif' width="160">
+                        </div>
+                        <script type="text/javascript">
+                            function concept_graphs_start() {
+                                document.getElementById('concept_graphs_seg').style.opacity = "1";
+                            }
+
+                            function concept_graphs_stop() {
+                                document.getElementById('concept_graphs_seg').style.opacity = "0";
+                            }
+                            o4a_real_stop()
+                        </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://concept-graphs.github.io/">
+                            <papertitle> ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning
+                            </papertitle>
+                        </a>
+                        <br>
+                        <a href="https://georgegu1997.github.io/">Qiao Gu &#42;</a>,
+                        <a href="https://www.alihkw.com/">Alihusein Kuwajerwala &#42;</a>,
+                        <strong>Sacha Morin &#42;</strong>,
+                        <a href="https://krrish94.github.io">Krishna Murthy Jatavallabhula &#42;</a>,
+                        <a href="https://bipashasen.github.io/">Bipasha Sen</a>,
+                        <a href="https://skymanaditya1.github.io/">Aditya Agarwal</a>,
+                        <a
+                                href="https://www.jhuapl.edu/work/our-organization/research-and-exploratory-development/red-staff-directory/corban-rivera">Corban
+                            Rivera</a>,
+                        <a href="https://scholar.google.com/citations?user=92bmh84AAAAJ">William Paul</a>,
+                        <a href="https://mila.quebec/en/person/kirsty-ellis/">Kirsty Ellis</a>,
+                        <a href="https://engineering.jhu.edu/faculty/rama-chellappa/">Rama Chellappa</a>,
+                        <a href="https://people.csail.mit.edu/ganchuang/">Chuang Gan</a>,
+                        <a href="https://celsodemelo.net/">Celso Miguel de Melo</a>,
+                        <a href="http://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
+                        <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a>,
+                        <a href="http://www.cs.toronto.edu/\~florian/">Florian Shkurti</a>,
+                        <a href="http://liampaull.ca">Liam Paull</a>
+                        <!--                        <br>-->
+                        <!--                        <em>Where it got published. -->
+                        <!--                        <br>-->
+                        <div class="paper" id="concept_graphs_ft">
+                            <a href="https://github.com/concept-graphs/concept-graphs">code</a> /
+                            <a href="http://arxiv.org/abs/2309.16650">arXiv</a> /
+                            <a href="https://concept-graphs.github.io/">webpage</a> /
+                            <a href="javascript:togglebib('concept_graphs_bib_ft')" class="togglebib">bibtex</a>
+                            <pre id="concept_graphs_bib_ft" xml:space="preserve">
+@article{conceptgraphs,
+  author    = {Gu, Qiao and Kuwajerwala, Alihusein and Morin, Sacha and Jatavallabhula, {Krishna Murthy} and  Sen, Bipasha and Agarwal, Aditya and Rivera, Corban and Paul, William and Ellis, Kirsty and Chellappa, Rama and Gan, Chuang and {de Melo}, {Celso Miguel} and Tenenbaum, {Joshua B.} and Torralba, Antonio and Shkurti, Florian and Paull, Liam},
+  title     = {ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning},
+  journal   = {arXiv},
+  year      = {2023},
+}
+}</pre>
+
+                        </div>
+                        <p></p>
+                        <div class="paper" id="concept_graphs_description_ft">
+                            <h6><a href="javascript:togglebib('concept_graphs_description_ft')" class="togglebib">ConceptGraphs uses off-the-shelf models to build an object-based map from RGB-D images. Objects have associated multi-view fused CLIP features and language captions that can be leveraged by robots to answer abstract queries.</a></h6>
+                            <pre xml:space="preserve">
+For robots to perform a wide variety of tasks, they require a 3D representation
+of the world that is semantically rich, yet compact and efficient for task-driven
+perception and planning. Recent approaches have attempted to leverage features from
+large vision-language models to encode semantics in 3D representations. However,
+these approaches tend to produce maps with per-point feature vectors, which do not
+scale well in larger environments, nor do they contain semantic spatial relationships
+between entities in the environment, which are useful for downstream planning.
+In this work, we propose ConceptGraphs, an open-vocabulary graph-structured
+representation for 3D scenes. ConceptGraphs is built by leveraging 2D foundation models
+and fusing their output to 3D by multi-view association. The resulting representations
+generalize to novel semantic classes, without the need to collect large 3D datasets or
+finetune models. We demonstrate the utility of this representation through a number of
+downstream planning tasks that are specified through abstract (language) prompts and
+require complex reasoning over spatial and semantic concepts.
+                      </pre>
+                        </div>
+                    </td>
+                </tr>
 
                     </tbody>
                 </table>
