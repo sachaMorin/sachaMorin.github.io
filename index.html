@@ -85,8 +85,9 @@
                         href="https://mila.quebec/en/">MILA</a>. I am advised by
                       <a href="https://www.guywolf.org">Guy Wolf</a> in the <a href="https://www.diffusion.space/team/team.html">RAFALES</a> lab
                       and <a href="http://liampaull.ca/">Liam Paull</a> in the
-                      <a href="https://montrealrobotics.ca/people.html">Robotics and Embodied AI Lab (REAL)</a> lab. I was previously an intern at <a href="https://www.bell-labs.com/#gref">Nokia Bell Labs</a> with Dan Kushnir.
+                      <a href="https://montrealrobotics.ca/people.html">Robotics and Embodied AI Lab (REAL)</a> lab. 
                     </p>
+                    <p>I am currently a research intern at <a href="https://www.sait.samsung.co.kr/saithome/about/labs.do">Samsung's SAIT AI Lab (SAIL)</a> in Montreal. I was previously an intern at <a href="https://www.bell-labs.com/#gref">Nokia Bell Labs</a> with Dan Kushnir.</p>
                     <p>I obtained a BSc in Mathematics and Computer Science from the Université de Montréal in 2021 and a Bachelor of Law from
                     the <a href="https://www.usherbrooke.ca/">Université de Sherbrooke</a> in 2017.</p>
                     <p style="text-align:center">
@@ -135,7 +136,7 @@
                       My research interests include:
                     </p>
                       <ul>
-                          <li>3D multimodal representations for robotics.</li>
+                          <li>3D multimodal maps for robotics.</li>
                           <li>Representation learning for robotics.</li>
                           <li>Generative models for mapping and planning.</li>
                       </ul>
@@ -163,75 +164,68 @@
                         <td></td>
                     </tr>
 
-                    <!-- One4All -->
-                    <tr onmouseout="o4a_real_stop()" onmouseover="o4a_real_start()">
+                    <!-- OpenLex3D -->
+                    <tr>
                         <td
                                 style="padding-top:0%;padding-bottom:2%;padding-left:7.5%;padding-right:0%;width:25%;vertical-align:middle">
                             <div class="aligned">
                                 <!--                      <div class="two" id='o4a_real_seg'>-->
                                 <!--                        <img src='images/o4a_real_after.gif' width="160">-->
                                 <!--                      </div>-->
-                                <img src='images/o4a.gif' width="160">
+                                <img src='images/openlex3d.png' width="160">
                             </div>
-                            <script type="text/javascript">
-                                function o4a_real_start() {
-                                    document.getElementById('o4a_real_seg').style.opacity = "1";
-                                }
-
-                                function o4a_real_stop() {
-                                    document.getElementById('o4a_real_seg').style.opacity = "0";
-                                }
-                                o4a_real_stop()
-                            </script>
                         </td>
                         <td style="padding:20px;width:75%;vertical-align:middle">
-                            <a href="https://montrealrobotics.ca/o4a/">
-                                <papertitle>One-4-All: Neural Potential Fields for Embodied Navigation
+                            <a href="https://openlex3d.github.io/">
+                                <papertitle>OpenLex3D: A New Evaluation Benchmark for Open-Vocabulary 3D Scene Representations
                                 </papertitle>
                             </a>
                             <br>
+                            <a href="https://ckassab.github.io/">Christina Kassab &#42;</a>,
                             <strong>Sacha Morin &#42;</strong>,
-                            <a href="https://mikes96.github.io/">Miguel Saavedra-Ruiz &#42;</a>,
-                            <a href="https://liampaull.ca/">Liam Paull</a>
+                            <a href="https://rl.uni-freiburg.de/people/buechner">Martin Büchner &#42;</a>,
+                            <a href="https://mmattamala.github.io/">Matias Mattamala</a>,
+                            <a href="https://www.kumaradityag.com/">Kumaraditya Gupta</a>,
+                            <a href="https://rl.uni-freiburg.de/people/valada">Abhinav Valada</a>,
+                            <a href="https://liampaull.ca/">Liam Paull</a>,
+                            <a href="https://ori.ox.ac.uk/people/maurice-fallon/">Maurice Fallon</a>
                             <br>
-                            <em>International Conference on Intelligent Robots and Systems (IROS)</em>, 2023
+                            <em>arXiv preprint</em>, 2025
                             <br>
-                            <div class="paper" id="o4a_real_ft">
-                                <a href="https://github.com/montrealrobotics/one4all">code</a> /
-                                <a href="https://arxiv.org/abs/2303.04011">arXiv</a> /
-                                <a href="https://montrealrobotics.ca/o4a/">webpage</a> /
-                                <a href="javascript:togglebib('o4a_real_ft')" class="togglebib">bibtex</a>
-                                <pre id="myid" xml:space="preserve">
-@article{morin2023one,
-	title        = {One-4-All: Neural Potential Fields for Embodied Navigation},
-	author       = {Morin, Sacha and Saavedra-Ruiz, Miguel and Paull, Liam},
-	year         = 2023,
-	journal      = {arXiv preprint arXiv:2303.04011}
+                            <div class="paper">
+                                <a href="https://github.com/openlex3d/openlex3d">code</a> /
+                                <a href="https://arxiv.org/abs/2503.19764">arXiv</a> /
+                                <a href="https://openlex3d.github.io/">webpage</a> /
+                                <a href="javascript:togglebib('openlex3d_bib')" class="togglebib">bibtex</a>
+                                <pre id="openlex3d_bib" xml:space="preserve">
+@misc{kassab2025openlex3dnewevaluationbenchmark,
+      title={OpenLex3D: A New Evaluation Benchmark for Open-Vocabulary 3D Scene Representations}, 
+      author={Christina Kassab and Sacha Morin and Martin Büchner and Matías Mattamala and Kumaraditya Gupta and Abhinav Valada and Liam Paull and Maurice Fallon},
+      year={2025},
+      eprint={2503.19764},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.19764}, 
 }</pre>
 
                             </div>
                             <p></p>
                             <div class="paper" id="o4a_real_description_ft">
-                                <h6><a href="javascript:togglebib('o4a_real_description_ft')" class="togglebib">An end-to-end fully
-                                    parametric method for image-goal navigation that leverages self-supervised and manifold learning to replace a topological graph with a geodesic regressor. During navigation, the geodesic regressor is used as an attractor in a potential function defined in latent space, allowing to frame navigation as a minimization problem.</a></h6>
+                                <h6><a href="javascript:togglebib('o4a_real_description_ft')" class="togglebib">A new dataset and benchmark for open-vocabulary 3D maps.</a></h6>
                                 <pre xml:space="preserve">
-A fundamental task in robotics is to navigate between two locations.
-In particular, real-world navigation can require long-horizon planning
-using high-dimensional RGB images, which poses a substantial challenge
-for end-to-end learning-based approaches. Current semi-parametric methods
-instead achieve long-horizon navigation by combining learned modules with
-a topological memory of the environment, often represented as a graph over
-previously collected images. However, using these graphs in practice typically
-involves tuning a number of pruning heuristics to avoid spurious edges, limit
-runtime memory usage and allow reasonably fast graph queries. In this work,
-we present One-4-All (O4A), a method leveraging self-supervised and manifold
-learning to obtain a graph-free, end-to-end navigation pipeline in which the
-goal is specified as an image. Navigation is achieved by greedily minimizing
-a potential function defined continuously over the O4A latent space. Our system
-is trained offline on non-expert exploration sequences of RGB data and controls,
-and does not require any depth or pose measurements. We show that O4A can reach
-long-range goals in 8 simulated Gibson indoor environments, and further demonstrate
-successful real-world navigation using a Jackal UGV platform.
+3D scene understanding has been transformed by open-vocabulary 
+language models that enable interaction via natural language. However, 
+the evaluation of these representations is limited to closed-set 
+semantics that do not capture the richness of language. This work 
+presents OpenLex3D, a dedicated benchmark to evaluate 3D open-vocabulary 
+scene representations. OpenLex3D provides entirely new label annotations 
+for 23 scenes from Replica, ScanNet++, and HM3D, which capture real-world 
+linguistic variability by introducing synonymical object categories and 
+additional nuanced descriptions. By introducing an open-set 3D semantic 
+segmentation task and an object retrieval task, we provide insights on 
+feature precision, segmentation, and downstream capabilities. We evaluate various 
+existing 3D open-vocabulary methods on OpenLex3D, showcasing failure cases, and 
+avenues for improvement.
                       </pre>
                             </div>
                         </td>
@@ -350,6 +344,9 @@ require complex reasoning over spatial and semantic concepts.
                       <heading>News</heading>
                     </p>
                     <ul>
+                        <li>
+                            <strong>[March 2025]</strong> I joined <a href="https://www.sait.samsung.co.kr/saithome/about/labs.do">Samsung's SAIT AI Lab (SAIL)</a> for an internship! I am working with Alexia Jolicoeur-Martin and Sébastien Lachapelle on latent action modeling for robot policies.
+                        </li>
                         <li>
                             <strong>[July 2024]</strong> <a href="https://github.com/Labo-Lacourse/stepmix">StepMix</a> has been (tentatively) accepted in the Journal of Statistical Software. Stay tuned for the final version!
                         </li>
@@ -1063,7 +1060,7 @@ drive mobile robot to perform two tasks: lane following and obstacle avoidance. 
               <tr>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%">
                   <p style="color:#333">
-                    <strong>Updated</strong> September 23 2024
+                    <strong>Updated</strong> May 8 2025
                   </p>
                 </td>
                 <td style="padding-top:1%;padding-bottom:0%;padding-left:0%;padding-right:0%;text-align:right">
