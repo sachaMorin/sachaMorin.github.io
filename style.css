@@ -239,3 +239,26 @@ span.highlight {
 /*	position: relative;*/
 /*	overflow-x: auto;*/
 /*}*/
+
+
+
+.news-list {
+  max-height: 300px; /* or whatever fits your design */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.news-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Optional: background track style */
+.news-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
